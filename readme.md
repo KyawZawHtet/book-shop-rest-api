@@ -1,1 +1,2 @@
-- [x] Admin CURD
+- [x] Admin CURD REST API
+- [x] User CRUD REST API
