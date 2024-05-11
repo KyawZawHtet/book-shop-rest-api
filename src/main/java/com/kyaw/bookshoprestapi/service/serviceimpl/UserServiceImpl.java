@@ -89,6 +89,6 @@ public class UserServiceImpl implements UserService {
                 () -> new ResourceNotFoundException("User", "id", userId)
         );
 
-        userRepository.deleteById(userId);
+        userRepository.deleteById(exitingUser.getId());
     }
 }

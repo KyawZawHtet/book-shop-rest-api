@@ -82,6 +82,6 @@ public class AdminServiceImpl implements AdminService {
         Admin exitingAdmin = adminRepository.findById(adminId).orElseThrow(
                 () -> new ResourceNotFoundException("Admin", "id", adminId)
         );
-        adminRepository.deleteById(adminId);
+        adminRepository.deleteById(exitingAdmin.getId());
     }
 }
